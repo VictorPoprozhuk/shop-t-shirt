@@ -1,19 +1,11 @@
 # shop-t-shirt
 
-## Project setup
-```
-yarn install
-```
+[t-shirt-shop](https://magical-chebakia-305f33.netlify.app/)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+T-shirt store is implemented on vue.js.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Project consists of three pages: catalog, basket, 404 page.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The project uses VueX, vueRouter, tailvind css.
+
+On small devices, the swipe function is implemented between the pages of the catalog and the basket of goods, for better accessibility.
