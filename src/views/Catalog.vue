@@ -2,7 +2,7 @@
    <section class="flex-col flex">
       <div>
          <filters />
-         <select-app />
+         <!-- <select-app /> -->
       </div>
       <list-cards />
    </section>
