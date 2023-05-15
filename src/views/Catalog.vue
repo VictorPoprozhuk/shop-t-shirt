@@ -1,10 +1,8 @@
 <template>
    <section class="flex-col flex">
-      <div>
-         <filters />
-         <!-- <select-app /> -->
-      </div>
-      <list-cards />
+		<filters />
+		<!-- <select-app /> -->
+      	<list-cards />
    </section>
 </template>
 

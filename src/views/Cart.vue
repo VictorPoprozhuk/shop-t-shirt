@@ -34,13 +34,13 @@
                   'hover:bg-mysilver hover:text-myblack':
                      !innerWidth,
                }"
-                  class="bg-cartPageButton inline-block text-mysilver duration-500 border-mysilver border-2 px-[75px] py-[14px] rounded-[30px] relative">
+                  class="bg-cartPageButton inline-block text-mysilver duration-200 border-mysilver border-2 px-[75px] py-[14px] rounded-[30px] relative">
                   <span
                      class="absolute left-[31px] text-[28px] top-[5px] transform flex justify-center items-center">&lt;</span>
                   Go back
                </router-link>
                <button :class="{ 'hover:bg-logo2': !innerWidth }"
-                  class="bg-cartPageButton inline-block text-bgCardBtns sm:mb-0 mb-[20px] bg-mypink px-[75px] py-[14px] rounded-[30px] duration-500">
+                  class="bg-cartPageButton inline-block text-bgCardBtns sm:mb-0 mb-[20px] bg-mypink px-[75px] py-[14px] rounded-[30px] duration-200">
                   Pay Now</button>
             </div>
          </div>

@@ -1,24 +1,22 @@
 <template>
    <div
-      class="sm:w-[260px] w-[330px] flex flex-col justify-stretch drop-shadow-lg"
+      class="p-[10px] grid drop-shadow-lg lg:w-[25%] md:w-[33.3%] sm:w-[50%] w-[90%]"
       :class="{ 'border-b-2 border-myblack pb-[10px]': border }">
       <img
-         class="sm:h-[260px] h-[330px]"
+         class="w-full"
          :src="require(`../../assets/${item.img}.png`)"
          alt="product" />
-      <h2 class="text-c text-myblack mb-[22px] mt-[11px]">
-         {{ item.title }}
-      </h2>
+      <h2 class="text-c text-myblack mb-[22px] mt-[11px]">{{ item.title }}</h2>
       <div
-         class="py-[7px] px-[5px] bg-bgCardBtns rounded-[10px] mb-[17px]">
+         class="py-[7px] px-[5px] w-full bg-bgCardBtns rounded-[10px] mb-[17px]">
          <div class="flex justify-around">
             <button
                v-for="material in item.material"
-               class="transition-all duration-500 text-a text-myblack w-[40%] bg-white py-[10px] rounded-[5px]"
+               class="transition-all duration-200 text-a text-myblack w-[40%] bg-white py-[10px] rounded-[5px]"
                :class="{
                   'bg-[transparent]': !material.rest,
-                  'hover:bg-logo2': material.rest && !innerWidth,
-                  'bg-logoP': material.selected,
+                  'hover:bg-[#f2488a] hover:text-bgCardBtns': material.rest && !innerWidth,
+                  'bg-[#f2488a] text-bgCardBtns': material.selected,
                }"
                :disabled="!material.rest"
                :key="material"
@@ -33,11 +31,11 @@
          </div>
          <div class="flex justify-around mt-2">
             <button
-               class="duration-500 text-a text-myblack w-[30%] bg-white py-[10px] rounded-[5px]"
+               class="duration-200 text-a text-myblack w-[30%] bg-white py-[10px] rounded-[5px]"
                :class="{
                   'bg-[transparent]': !size.rest,
-                  'hover:bg-logo2': size.rest && !innerWidth,
-                  'bg-logoP': size.selected,
+                  'hover:bg-[#f2488a] hover:text-bgCardBtns': size.rest && !innerWidth,
+                  'bg-[#f2488a] text-bgCardBtns': size.selected,
                }"
                v-for="size in item.size"
                :disabled="!size.rest"
@@ -63,7 +61,9 @@
 
 <script>
    import { mapActions, mapGetters } from "vuex";
+   import ButtonCard from "@/components/UI/ButtonCard.vue";
    export default {
+	   components: {ButtonCard},
       props: {
          item: Object,
          border: Boolean,

@@ -1,6 +1,6 @@
 <template>
    <button
-      class="py-[15px] px-[40px] rounded-[30px] duration-500"
+      class="py-[15px] px-[40px] rounded-[30px] duration-200"
       :class="{
          'hover:bg-[#282828] hover:text-white': !innerWidth,
          'bg-myblack text-white': filter.selected && !innerWidth,

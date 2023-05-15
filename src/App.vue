@@ -86,10 +86,12 @@
    }
 
    #app {
-      font-family: "Proxima Nova";
-      font-weight: 500;
-      text-align: center;
-      color: #2c3e50;
+       font-family: "Proxima Nova";
+       font-weight: 500;
+       text-align: center;
+       color: #2c3e50;
+       max-width: 1440px;
+       margin: 0 auto;
    }
 
    nav a.router-link-exact-active {
