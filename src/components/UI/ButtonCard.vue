@@ -1,9 +1,9 @@
 <template>
    <button
-      class="flex rounded-[30px] border-[1px] border-mypink px-[10px] py-[13px] gap-[10px] items-center duration-500"
+      class="flex rounded-[30px] border-[1px] border-mypink px-[10px] py-[13px] h-[52px] gap-[5px] items-center duration-200"
       :class="{
          'bg-mypink': hover ,
-         ' bg-white': !hover ,
+         'bg-white': !hover ,
       }"
       @mousemove="hover =  !innerWidth"
       @mouseleave="hover = false">
@@ -22,7 +22,7 @@
             }" />
       </svg>
       <span
-         class="font-bold leading-[24px]"
+         class="font-bold leading-[24px] md:text-a"
          :class="{
             'text-white ': hover ,
             'text-mypink': !hover,
@@ -31,7 +31,7 @@
       >
       <span
          v-if="isItemCart"
-         class="text-a leading-[16px] rounded-[50%] w-[24px] h-[24px] flex justify-center items-center"
+         class="rounded-[50%] px-[9px] py-[2px] text-[12px] flex justify-center items-center"
          :class="{
             'bg-[white] text-mypink': hover ,
             ' text-white bg-mypink': !hover ,

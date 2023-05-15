@@ -7,7 +7,7 @@
       <button
          @click="showFilter = !showFilter"
          v-if="innerWidth"
-         class="bg-cartPageButton inline-block text-mysilver duration-500 border-mysilver border-2 px-[40px] py-[8px] rounded-[30px] relative"
+         class="bg-cartPageButton inline-block text-mysilver duration-200 border-mysilver border-2 px-[40px] py-[13px] rounded-[30px] relative"
          :class="{
             'hover:bg-mysilver hover:text-myblack': !innerWidth,
          }">

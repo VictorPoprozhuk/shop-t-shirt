@@ -1,9 +1,8 @@
 <template>
-   <button>
       <router-link
          to="/cart"
          v-if="$route.path !== '/cart'"
-         class="bg-mypink flex gap-[10px] cursor-pointer justify-center items-center px-[15px] py-[13px] sm:px-[23px] rounded-[30px] font-bold">
+         class="bg-mypink flex gap-[10px] cursor-pointer h-fit justify-center items-center px-[15px] py-[13px] sm:px-[23px] rounded-[30px] font-bold">
          <span class="text-white">{{ totalCart }} $</span>
          <span class="w-[2px] h-[16px] bg-logo2"></span>
          <span class="text-white">
@@ -13,7 +12,6 @@
             {{ quantifyProd }}</span
          >
       </router-link>
-   </button>
 </template>
 
 <script>
